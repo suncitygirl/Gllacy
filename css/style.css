@@ -1,0 +1,72 @@
+body {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #849d8f;
+  color: #000000;
+}
+
+.container {
+  margin: 0 2.2%;
+}
+
+/*------------------------------HEADER---------------------*/
+
+.main-header {
+  background-color: #849d8f;
+  color: #000000;
+}
+
+.main-navigation {
+  min-height: 63px;
+}
+
+.main-navigation .menu-logo {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.menu-logo img {
+  width: 153px;
+  height: 63px;
+}
+
+.main-navigation ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  font-size: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 28px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-navigation a{
+  display: inline-block;
+  padding-top: 31px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom : 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.user-block {
+  float: right;
+}
+
+/*----------------------------*/
