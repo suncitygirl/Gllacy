@@ -2,15 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e2d9103c28/UntitledProject/style-svg.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel='stylesheet'href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
   <title>Gllacy Shop</title>
 </head>
 <body>
   <header class="main-header">
     <div class="container">
-      <nav class="main-navigation">
+      <nav class="main-navigation clearfix">
         <img class="menu-logo" src="img/menu-logo.svg" alt="Gllacy Shop" width="153" height="63">
         <ul>
           <li><a href="gllacy-catalog.html">Каталог</a></li>
@@ -18,18 +19,39 @@
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <div class="user-block">
-        <button class="find">Найти</button>
-        <a class="Login">Войти</a>
-        <a class="cart"></a>
-      </div>
-      <div class="info">
-        <span class="working-hours">С 10 до 20, ежедневно</span>
-        <span class="phone">8 812 450-25-25</span>
+      <div class="user-block clearfix">
+        <ul>
+          <li>
+            <a class="find btn" href="#">
+              <svg class="icon find-icon">
+                <use xlink:href="#icon-find-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="login btn" href="#">
+              <svg class="icon enter-icon">
+                <use xlink:href="#icon-enter-icon"></use>
+              </svg>
+              Вход
+            </a>
+          </li>
+          <li>
+            <a class="cart btn" href="#">
+              <svg class="icon cart-icon">
+                <use xlink:href="#icon-cart-icon"></use>
+              </svg>
+              Пусто</a>
+            </li>
+        </ul>
+        <div class="info">
+          <span class="working-hours clearfix">С 10 до 20, ежедневно</span><br>
+          <span class="phone clearfix">8 812 450-25-25</span>
+        </div>
       </div>
     </div>
   </header>
-  <main class="content">
+<main class="content">
     <div class="container">
       <div class="slider">
         <div class="slides slide1"></div>
@@ -108,7 +130,7 @@
       <h2>Для заказов по телефону:</h2>
       <span class="phone">8 812 450-25-25</span>
       <span class="working-hours">(с 10 до 20 ежедневно)</span>
-      <a class="feedback btn" href="#">ФОрма обратной связи</a>
+      <a class="feedback btn" href="#">Форма обратной связи</a>
     </section>
   </main>
   <footer class="main-footer">
@@ -131,6 +153,7 @@
         <b class="made-by">Сделано %юзернейм% для <a class="htmlac-link" href="https://htmlacademy.ru/">HTML Academy</a> © 2016</b>
       </div>
     </div>
-    </footer>
+  </footer>
+  <script defer src="https://i.icomoon.io/public/temp/e2d9103c28/UntitledProject/svgxuse.js"></script>
   </body>
   </html>
