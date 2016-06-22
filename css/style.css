@@ -216,7 +216,7 @@ body {
 
 .slides {
   border-radius: 100%;
-  background: radial-gradient(circle, #cdf3df, #bfe2cf, #a1c0ae, #99b6a7, #849d8f, #849d8f, #849d8f, #849d8f);
+  background: radial-gradient(circle, #cdf3df, #bfe2cf, #a1c0ae, #99b6a7, #849d8f, #849d8f, #849d8f, #849d8f, #849d8f, #849d8f);
 }
 
 .slides img{
