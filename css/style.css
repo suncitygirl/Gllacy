@@ -237,6 +237,25 @@ body {
   color: #ffffff;
 }
 
+.slider form {
+  position: absolute;
+  border: 1px solid;
+  min-width: 80px;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider input[type="radio"]::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: red;
+}
+
 .order-both-btn {
   position: absolute;
   bottom: 61px;
