@@ -30,8 +30,8 @@ body {
   border: 1px solid;
   border-color: transparent;
   text-decoration: none;
-  background: linear-gradient(to bottom, #f26743, #e74b36);
-  box-shadow: 0 2px 1px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 /*------------------------------HEADER---------------------*/
@@ -211,7 +211,9 @@ body {
 
 .slider {
   position: relative;
+  z-index: 1;
   width: 100%;
+  margin-bottom:
 }
 
 .slides {
@@ -281,3 +283,56 @@ input[type="radio"]:checked + label {
 }
 
 /*------------------------------------------------------------------------*/
+
+.promo {
+  position: relative;
+  z-index: 2;
+  top: -10px;
+  min-height: 230px;
+}
+
+.promo h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 23px;
+  padding-left: 20px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.promo p {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color:#ffffff;
+}
+
+.offer {
+  width: 48.5%;
+  border-radius: 15px;
+  background-color: red;
+}
+
+.first-offer {
+  float: left;
+  background: url("../img/raspberry-background.png") no-repeat center;
+}
+
+.second-offer {
+  float: right;
+  background: url("../img/chocolate-background.png") no-repeat center;
+}
+
+.start-shopping-btn {
+  float: right;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-right: 21px;
+  padding: 15px 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*-------------------------BEST SELLING BLOCK------------------------------*/
