@@ -338,6 +338,7 @@ input[type="radio"]:checked + label {
 /*-------------------------BEST SELLING BLOCK------------------------------*/
 .top-selling ul {
   width: 100%;
+  margin-bottom: 41px;
   padding: 0;
   font-size: 0;
 }
@@ -414,4 +415,61 @@ input[type="radio"]:checked + label {
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
+}
+
+/*-------------------------------FEATURES------------------------------------*/
+
+.features {
+  min-height: 306px;
+  width: 100%;
+  background: #f0e6d3 url("../img/waffle-pattern.jpg") repeat;
+  border: transparent solid 1px;
+  border-radius: 15px;
+}
+
+.feature {
+  position: relative;
+  width: 46%;
+  padding-left: 55px;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+}
+
+.column-left {
+  float: left;
+  margin-left: 21px;
+  margin-right: 3%;
+}
+
+.column-right {
+  float: right;
+  margin-right: 21px;
+}
+
+.features p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #323232;
+}
+
+.feature-title {
+  display: inline-block;
+  margin-bottom: 27px;
+  padding-top: 20px;
+  padding-left: 21px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #323232;
+}
+
+.features .icon {
+  position: absolute;
+  left: 0px;
+  top: -12px;
+  width: 47px;
+  height: 47px;
+  fill: #323232;
 }
