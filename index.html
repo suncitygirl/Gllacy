@@ -147,7 +147,7 @@
               <a href="#">
                 <div class="hit">
                   <img class="ice-cream" src="img/orange-jam-ice-cream.png" width="267" height="267" alt="Сливочное мороженое">
-                  <span class="price"><span clas="price-numb">310</span> ₽/кг</span>
+                  <span class="price"><span class="price-numb">310</span> ₽/кг</span>
                 </div>
                 <b class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</b>
               </a>
@@ -156,7 +156,7 @@
               <a href="#">
                 <div class="hit">
                   <img class="ice-cream" src="img/coffee-choco-ice-cream.png" width="267" height="267" alt="Сливочное мороженое">
-                  <span class="price"><span clas="price-numb">380</span> ₽/кг</span>
+                  <span class="price"><span class="price-numb">380</span> ₽/кг</span>
                 </div>
                 <b class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</b>
               </a>
@@ -165,7 +165,7 @@
               <a href="#">
                 <div class="hit">
                   <img class="ice-cream" src="img/strawberry-ice-cream.png" width="267" height="267" alt="Сливочное мороженое">
-                  <span class="price"><span clas="price-numb">355</span> ₽/кг</span>
+                  <span class="price"><span class="price-numb">355</span> ₽/кг</span>
                 </div>
                 <b class="description">Сливочно-клубничное с присыпкой из белого шоколада</b>
               </a>
@@ -174,7 +174,7 @@
               <a href="#">
                 <div class="hit">
                   <img class="ice-cream" src="img/caramel-ice-cream.png" width="267" height="267" alt="Сливочное мороженое">
-                  <span class="price"><span clas="price-numb">415</span> ₽/кг</span>
+                  <span class="price"><span class="price-numb">415</span> ₽/кг</span>
                 </div>
                 <p><b class="description">Сливочное крем-брюле с карамельной подливкой</b></p>
               </a>
@@ -209,15 +209,17 @@
           </div>
         </section>
         <div class="social-interaction clearfix">
-          <article class="news">
-            <h2>Новое в нашем блоге</h2>
-            <h3><a class="news-link" href="#">10  способов сервировки фруктовых щербетов к столу</a></h3>
-          </article>
-          <article class="subscription">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-            <input type="email" name="email" placeholder="Электронная почта">
-            <button class="subscribe-btn btn" type="submit">Отправить</button>
-          </article>
+          <section class="news">
+            <p>Новое в нашем блоге</p>
+            <a class="news-link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+          </section>
+          <div class="subscribe-wrapper clearfix">
+            <section class="subscribe ">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+              <input class="subscribe-form clearfix" type="email" name="email" placeholder="Электронная почта">
+              <button class="subscribe-btn btn" type="submit">Отправить</button>
+            </section>
+          </div>
         </div>
         <div class="map">
         </div>
@@ -229,27 +231,28 @@
           <span class="working-hours">(с 10 до 20 ежедневно)</span>
           <a class="feedback-btn btn" href="#">Форма обратной связи</a>
         </section>
-      </main>
-      <footer class="main-footer">
-        <div class="container">
-          <div class="social">
-            <a class="twitter-btn" href="#">Twitter</a>
-            <a class="instagram-btn" href="#">Instagram</a>
-            <a class="facebook-btn" href="#">Facebook</a>
-            <a class="vk-btn" href="#">VK</a>
-          </div>
-          <div class="read-more">
-            <img class="heart" src="img/sprite.png" alt="Heart">
-            <a class="for-providers" href="#">Для поставщиков></a>
-            <a class="for-providers" href="#">О производстве</a>
-            <a class="for-providers" href="#">Наши документы></a>
-            <a class="for-providers" href="#">Экологические стандарты></a>
-          </div>
-          <div class="copyright">
-            <img class="copyright-logo" src="img/sprite.png" alt="Logo">
-            <b class="made-by">Сделано %юзернейм% для <a class="htmlac-link" href="https://htmlacademy.ru/">HTML Academy</a> © 2016</b>
-          </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="social">
+          <a class="twitter-btn" href="#">Twitter</a>
+          <a class="instagram-btn" href="#">Instagram</a>
+          <a class="facebook-btn" href="#">Facebook</a>
+          <a class="vk-btn" href="#">VK</a>
         </div>
-      </footer>
-    </body>
-    </html>
+        <div class="read-more">
+          <img class="heart" src="img/sprite.png" alt="Heart">
+          <a class="for-providers" href="#">Для поставщиков></a>
+          <a class="for-providers" href="#">О производстве</a>
+          <a class="for-providers" href="#">Наши документы></a>
+          <a class="for-providers" href="#">Экологические стандарты></a>
+        </div>
+        <div class="copyright">
+          <img class="copyright-logo" src="img/sprite.png" alt="Logo">
+          <b class="made-by">Сделано %юзернейм% для <a class="htmlac-link" href="https://htmlacademy.ru/">HTML Academy</a> © 2016</b>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
