@@ -289,6 +289,7 @@ input[type="radio"]:checked + label {
   z-index: 2;
   top: -10px;
   min-height: 230px;
+  margin-bottom: 30px;
 }
 
 .promo h2 {
@@ -336,3 +337,82 @@ input[type="radio"]:checked + label {
 }
 
 /*-------------------------BEST SELLING BLOCK------------------------------*/
+.top-selling ul {
+  width: 100%;
+  padding: 0;
+  font-size: 0;
+}
+
+.hit {
+  position: relative;
+  z-index: 1;
+}
+
+.top-selling li {
+  position: relative;
+  display: inline-block;
+  width: 22.7%;
+  margin-right: 3%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.top-selling li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.top-selling a {
+  color: #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.hit::before {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 61px;
+  height: 61px;
+  background: transparent url("../img/hit-tag.png") no-repeat center;
+}
+
+.ice-cream {
+  width: 100%;
+  margin-bottom: 17px;
+  height: auto;
+}
+
+.ice-cream img {
+  display: block;
+  max-height: 100%;
+}
+
+.price {
+  position: absolute;
+  z-index: 2;
+  top: 75%;
+  left: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.price-numb {
+  font-size: 45px;
+}
+
+.description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #ffffff;
+}
