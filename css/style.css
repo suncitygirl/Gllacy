@@ -129,7 +129,6 @@ body {
   display: inline-block;
   text-decoration: none;
   box-shadow: none;
-
 }
 
 .find {
@@ -318,12 +317,12 @@ input[type="radio"]:checked + label {
 
 .first-offer {
   float: left;
-  background: url("../img/raspberry-background.png") no-repeat center;
+  background: #700120 url("../img/raspberry-background.png") no-repeat center;
 }
 
 .second-offer {
   float: right;
-  background: url("../img/chocolate-background.png") no-repeat center;
+  background: #311c13 url("../img/chocolate-background.png") no-repeat center;
 }
 
 .start-shopping-btn {
