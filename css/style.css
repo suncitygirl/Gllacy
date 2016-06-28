@@ -476,12 +476,6 @@ input[type="radio"]:checked + label {
 
 /*------------------------------------SOCIAL-------------------------------*/
 
-.subscribe-and-news-wrapper::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
 .news, .subscribe-wrapper {
   border-radius: 15px;
   margin-bottom: 40px;
@@ -489,14 +483,15 @@ input[type="radio"]:checked + label {
 }
 
 .news {
-  background: #fff url("../img/news-background.png") no-repeat center;
-  background-size: cover;
-  color: #000;
   float: left;
+  width: 45.3%;
   margin-right: 1.9%;
   padding: 8px 2% 20px 1.7%;
   text-align: left;
-  width: 45.3%;
+  background: #fff url("../img/news-background.png") no-repeat center;
+  background-size: cover;
+  color: #000;
+
 }
 
 .news p {
@@ -510,6 +505,7 @@ input[type="radio"]:checked + label {
 .news a {
   color: #333;
   display: table;
+  line-height: 1.2em;
   font-size: 24px;
   font-weight: 700;
   max-height: 100px;
@@ -521,20 +517,20 @@ input[type="radio"]:checked + label {
 }
 
 .subscribe-wrapper {
-  background: #f8f7f4 url("../img/subscribe_background2.png") repeat center;
-  background-size: cover;
   float: right;
-  padding: 5px 5px 5px 6px;
   width: 47.8%;
+  background: #f8f7f4 url("../img/subscribe_background2.jpg") repeat;
+  background-size: 100px 100px;
+  padding: 5px 5px 5px 6px;
 }
 
 .subscribe {
   border-radius: 15px;
   line-height: 22px;
-  padding: 12px 20px 35px;
+  padding: 12px 20px 15px;
   text-align: left;
   width: auto;
-  background: #f8f7f4 none repeat scroll 0 0;
+  background: #f8f7f4 none repeat;
 }
 
 .subscribe p {
@@ -544,33 +540,35 @@ input[type="radio"]:checked + label {
 }
 
 .subscribe-form {
-  padding-right: 140px;
   position: relative;
+  padding-right: 140px;
   width: auto;
 }
 
 .subscribe-form input[type="email"] {
-  border: 1px solid rgba(178, 178, 178, 0.5);
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #000;
   display: inline-block;
-  line-height: 24.3px;
-  max-height: 44px;
-  outline: medium none;
+  width: 100%;
   padding-bottom: 9px;
   padding-left: 8px;
   padding-top: 9px;
+  border: 1px solid rgba(178, 178, 178, 0.5);
+  border-radius: 5px;
+  color: #000;
+  line-height: 24.3px;
+  max-height: 44px;
+  outline: medium none;
   vertical-align: middle;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .subscribe-btn {
-  font-size: 17px;
-  line-height: 24.3px;
-  padding: 9px 22px 11px;
   position: absolute;
-  right: 15px;
-  top: bottom: 9px;
-
+  top: -1px;
+  right: 0;
+  height: 100%;
+  font-size: 17px;
+  padding: 9px 22px 11px;
+  bottom: 20px;
 }
+
+/*----------------------------------CONTACTS----------------------------------*/
