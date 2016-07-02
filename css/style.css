@@ -1,6 +1,6 @@
 body {
-  max-width: 1200px;
   min-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 24px;
@@ -476,39 +476,42 @@ input[type="radio"]:checked + label {
 
 /*------------------------------------SOCIAL-------------------------------*/
 
+.social-interaction {
+  margin-bottom: 40px;
+}
+
 .news, .subscribe-wrapper {
   border-radius: 15px;
-  margin-bottom: 40px;
-  min-height: 192px;
 }
 
 .news {
   float: left;
   width: 45.3%;
   margin-right: 1.9%;
-  padding: 8px 2% 20px 1.7%;
+  padding: 26px 2% 85px 1.7%;
   text-align: left;
   background: #fff url("../img/news-background.png") no-repeat center;
   background-size: cover;
   color: #000;
-
+  min-height: 134px;
 }
 
 .news p {
+  margin: 0;
   color: #666;
   font-weight: 500;
   line-height: 1.3;
-  margin-bottom: 5px;
+  margin-bottom: 13px;
   max-width: 290px;
 }
 
 .news a {
+  margin:0;
   color: #333;
   display: table;
   line-height: 1.2em;
   font-size: 24px;
   font-weight: 700;
-  max-height: 100px;
   max-width: 290px;
 }
 
@@ -527,16 +530,17 @@ input[type="radio"]:checked + label {
 .subscribe {
   border-radius: 15px;
   line-height: 22px;
-  padding: 12px 20px 15px;
+  padding: 32px 20px 36px;
   text-align: left;
   width: auto;
   background: #f8f7f4 none repeat;
+  min-height: 168px;
 }
 
 .subscribe p {
   color: #666;
-  margin-bottom: 16px;
-  min-height: 86px;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .subscribe-form {
@@ -548,13 +552,13 @@ input[type="radio"]:checked + label {
 .subscribe-form input[type="email"] {
   display: inline-block;
   width: 100%;
-  padding-bottom: 9px;
-  padding-left: 8px;
-  padding-top: 9px;
+  padding-bottom: 13px;
+  padding-left: 11px;
+  padding-top: 15px;
   border: 1px solid rgba(178, 178, 178, 0.5);
   border-radius: 5px;
   color: #000;
-  line-height: 24.3px;
+  line-height: 24px;
   max-height: 44px;
   outline: medium none;
   vertical-align: middle;
@@ -572,3 +576,72 @@ input[type="radio"]:checked + label {
 }
 
 /*----------------------------------CONTACTS----------------------------------*/
+
+.contacts {
+  position: relative;
+  height: 429px;
+}
+
+.contacts-info {
+  position: absolute;
+  top: 65px;
+  right: 2.2%;
+  width: 271px;
+  min-height: 248px;
+  padding: 31px 25px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.contacts h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #343434;
+  margin-bottom: 9px;
+  margin-top: 0;
+}
+
+.contacts .order {
+  margin-bottom: 12px;
+}
+
+.contacts span {
+  display: block;
+  float: left;
+  line-height: 22px;
+  background-color: #ffffff;
+}
+
+.contacts .phone {
+  font-size: 18px;
+  font-weight: 700;
+  color: #343434;
+}
+
+.contacts .working-hours {
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+}
+
+.contacts strong {
+  display: block;
+  margin-bottom: 23px;
+  color: #343434;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.feedback-btn {
+  padding: 14px 35px 13px 32px;
+}
+
+#YMapsID {
+  height:429px;
+  width: auto;
+}
