@@ -645,3 +645,117 @@ input[type="radio"]:checked + label {
   height:429px;
   width: auto;
 }
+
+/*---------------------------------FOOTER------------------------------------*/
+
+.main-footer {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 23px;
+  background-color: #849d8f;
+  color: #ffffff;
+  font-size: 0;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.social{
+  float: left;
+  width: 185px;
+}
+
+.social a {
+  display: inline-block;
+  vertical-align: top;
+  width: 37px;
+  height: 37px;
+  margin-right: 12px;
+}
+
+.social a:last-child {
+  margin-right: 0;
+}
+
+.read-more {
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  left: 50%;
+  margin-left: -163px;
+  padding-left: 22px;
+  width: 326px;
+  min-height: 37px;
+  white-space: normal;
+}
+
+.read-more a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.col-1 {
+  display: block;
+  float: left;
+  width: 111px;
+}
+
+.col-2 {
+  display: block;
+  float:right;
+  width: 165px;
+}
+
+.copyright {
+  float: right;
+  position: relative;
+  width: 150px;
+  min-height:  57px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.twitter-icon {
+  opacity: 0.7;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+}
+
+.insta-icon {
+  opacity: 0.7;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+}
+
+.fb-icon {
+  opacity: 0.7;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+}
+
+.vk-icon {
+  opacity: 0.7;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 13px;
+}
+
+.htmlac-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 36px;
+}
