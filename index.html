@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FVgw5GEh3s2XLzq4675dSBC79g73ljEW&width=100%&height=429&lang=ru_RU&sourceType=constructor&scroll=true&id=YMapsID"></script>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FVgw5GEh3s2XLzq4675dSBC79g73ljEW&width=100%&height=429&lang=ru_RU&sourceType=constructor&scroll=true&id=YMapsID"></script>
   <title>Gllacy Shop</title>
 </head>
 <body>
@@ -239,24 +239,46 @@
       <a class="feedback-btn btn" href="#">Форма обратной связи</a>
     </section>
   </div>
-  <footer class="main-footer">
+  <footer class="main-footer clearfix">
     <div class="container">
       <div class="social">
-        <a class="twitter-btn" href="#">Twitter</a>
-        <a class="instagram-btn" href="#">Instagram</a>
-        <a class="facebook-btn" href="#">Facebook</a>
-        <a class="vk-btn" href="#">VK</a>
+        <a class="twitter-btn" href="#">
+          <svg class="icon twitter-icon">
+            <use xlink:href="#twitter-icon"></use>
+          </svg>
+        </a>
+        <a class="instagram-btn" href="#">
+          <svg class="icon insta-icon">
+            <use xlink:href="#insta-icon"></use>
+          </svg>
+        </a>
+        <a class="facebook-btn" href="#">
+          <svg class="icon fb-icon">
+            <use xlink:href="#fb-icon"></use>
+          </svg>
+        </a>
+        <a class="vk-btn" href="#">
+          <svg class="icon vk-icon">
+            <use xlink:href="#vk-icon"></use>
+          </svg>
+        </a>
       </div>
-      <div class="read-more">
-        <img class="heart" src="img/sprite.png" alt="Heart">
-        <a class="for-providers" href="#">Для поставщиков></a>
-        <a class="for-providers" href="#">О производстве</a>
-        <a class="for-providers" href="#">Наши документы></a>
-        <a class="for-providers" href="#">Экологические стандарты></a>
+      <div class="read-more clearfix">
+        <svg class="icon heart-icon">
+          <use xlink:href="#heart-icon"></use>
+        </svg>
+        <a class="for-providers col-1" href="#">Для поставщиков</a>
+        <a class="about col-2" href="#">Наши документы</a>
+        <a class="documentation col-1" href="#">О производстве</a>
+        <a class="eco-stadarts col-2" href="#">Экологические стандарты</a>
       </div>
-      <div class="copyright">
-        <img class="copyright-logo" src="img/sprite.png" alt="Logo">
-        <b class="made-by">Сделано %юзернейм% для <a class="htmlac-link" href="https://htmlacademy.ru/">HTML Academy</a> © 2016</b>
+      <div class="copyright clearfix">
+        <a class="htmlac-link" href="https://htmlacademy.ru/">
+          <svg class="icon htmlac-logo">
+            <use xlink:href="#htmlac-logo"></use>
+          </svg>
+        </a>
+        <span class="made-by">By Yulia Garifulina for </span>
       </div>
     </div>
   </footer>
