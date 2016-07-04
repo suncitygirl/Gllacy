@@ -30,6 +30,7 @@ body {
   border: 1px solid;
   border-color: transparent;
   text-decoration: none;
+  background-image: -webkit-linear-gradient(bottom, #e74a35 0%, #f26843 100%);
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   cursor: pointer;
@@ -46,14 +47,14 @@ body {
 /*------------------------------HEADER---------------------*/
 
 .main-header {
+  margin-top: 10px;
   background-color: #849d8f;
   color: #000000;
-  margin-top: 10px;
 }
 
 .main-navigation {
   float: left;
-  width: 540px;
+  width: 560px;
   font-size: 0;
 }
 
@@ -78,45 +79,56 @@ body {
 
 .main-navigation > ul {
   position: relative;
+  top: -6px;
 }
 
-.main-navigation li {
+.main-menu > li > a {
+  display: block;
+  padding: 5px 11px 0px 11px;
+  color: #ffffff;
+}
+
+.main-menu > li:hover > a {
+  color: #333333;
+}
+
+.main-menu > li {
   display: inline-block;
-  margin-right: 28px;
-  padding-top: 22px;
-  min-height: 41px;
+  height: 31px;
+  margin-top: 18px;
+  margin-right: 5px;
   vertical-align: top;
   font-size: 16px;
   font-weight: 700;
-  line-height: normal;
+  border: transparent solid 1px;
+
+}
+
+.main-menu > li:last-child {
+  margin-right: 0;
+}
+
+.main-menu > li:hover {
+  border: #f7f6f3 solid 1px;
+  background-color: #f7f6f3;
+  border-radius: 20px;
 }
 
 .main-navigation li:last-child {
   margin-right: 0;
 }
 
-.main-navigation a{
-  display: inline-block;
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-}
-
 .main-menu .submenu {
-  display: none;
-  width: 147px;
-  margin: 0;
-  padding: 0;
   position: absolute;
   z-index: 99;
-  left: -21px;
-  top: 47px;
-  border: #f8f7f4 solid 1px;
-  border-radius: 5px;
+  left: -10px;
+  top: 55px;
+  display: none;
+  width: 143px;
+  border: transparent solid 1px;
+  border-radius: 10px;
   background-color: #f8f7f4;
+  box-shadow: 5px 18px 30px rgba(0,0,0,0.5);
 }
 
 .main-menu > li:hover .submenu {
@@ -127,20 +139,29 @@ body {
   min-height: 10px;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 102px;
 }
 
-.submenu li:first-child {
-  position: relative;
+.submenu a {
+  margin: -1px;
+  padding: 0;
+  text-decoration: none;
 }
 
-.submenu li:nth-child(2) {
-  margin-top: 12px;
+.submenu li {
+  margin: 5px 0;
+  padding: 7px 21px;
 }
-.submenu li:first-child::after {
+
+.submenu a:first-child li{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.submenu a:first-child::after {
   position: absolute;
   z-index: 100;
-  top: 40px;
+  top: 38px;
   left: 7px;
   content: "";
   height: 1px;
@@ -148,23 +169,23 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.submenu li a {
-  margin-top: 12px;
-  margin-left: 21px;
+.submenu li {
   color: #343434;
   font-size: 14px;
   font-weight: 400;
 }
 
-.submenu li:first-child a {
-  font-size: 14px;
-  font-weight: 700;
+.submenu li:hover {
+  background-color: #fbded8;
 }
 
-.submenu li:last-child {
-  margin-bottom: 12px;
+.submenu li:active {
+  background-color: #f6b5a5;
 }
 
+.submenu .active {
+  background-color: #d07058;
+}
 
 .user-block  {
   position: relative;
@@ -260,7 +281,7 @@ body {
 .info {
   position: absolute;
   right: 0;
-  bottom: : -52px;
+  bottom: -52px;
   min-height: 38px;
   width: 175px;
 }
@@ -291,6 +312,7 @@ body {
 
 .slides {
   border-radius: 100%;
+  background: -webkit-radial-gradient(circle, #cdf3df, #bfe2cf, #a1c0ae, #99b6a7, #849d8f, #849d8f, #849d8f, #849d8f, #849d8f, #849d8f);
   background: radial-gradient(circle, #cdf3df, #bfe2cf, #a1c0ae, #99b6a7, #849d8f, #849d8f, #849d8f, #849d8f, #849d8f, #849d8f);
 }
 
@@ -439,8 +461,7 @@ input[type="radio"]:checked + label {
   padding-bottom: 3px;
   text-decoration: none;
   border-bottom: 1px solid rgb(255, 255, 255);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  -webkit-background-clip: padding-box; /* for Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
