@@ -56,7 +56,7 @@ body {
 
 .main-navigation {
   float: left;
-  width: 560px;
+  width: 580px;
   font-size: 0;
 }
 
@@ -85,13 +85,15 @@ body {
 }
 
 .main-navigation > ul > li:active {
-  box-shadow: inset 2px 2px 3px rgba(0,0,0,0.6);
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 0 2px 1px 0 #696969 inset;
 }
 
 .main-menu > li > a {
   display: block;
   padding: 5px 11px 0px 11px;
   color: #ffffff;
+  outline: none 0;
 }
 
 .main-menu > li:hover > a {
@@ -99,6 +101,7 @@ body {
 }
 
 .main-menu > li {
+  position: relative;
   display: inline-block;
   height: 31px;
   margin-top: 18px;
@@ -106,9 +109,16 @@ body {
   vertical-align: top;
   font-size: 16px;
   font-weight: 700;
-  border: transparent inset 0.5px;
   border-radius: 50px;
-  transition: background-color 0.6s ease-out 0s;
+  transition: background-color 0.6s ease-out 0s, box-shadow 0.1s ease 0s;
+}
+
+.main-menu > li::after {
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 .main-menu > li:last-child {
@@ -116,7 +126,6 @@ body {
 }
 
 .main-menu > li:hover {
-  border: transparent inset 0.5px;
   background-color: #f7f6f3;
   border-radius: 50px;
 }
@@ -129,19 +138,20 @@ body {
   position: absolute;
   z-index: 99;
   left: -10px;
-  top: 55px;
+  top: 28px;
   display: none;
   width: 143px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   border: transparent solid 1px;
-  border-radius: 10px;
-  background-color: #f8f7f4;
+  border-radius: 7px;
   box-shadow: 5px 18px 30px rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 5s ease-in 5s;
 }
 
 .main-menu > li:hover .submenu {
   display: block;
+  opacity: 1;
+  transform: translateY(8px);
 }
 
 .submenu li {
@@ -151,8 +161,22 @@ body {
   color: #343434;
   font-size: 14px;
   font-weight: 400;
+  background-color: #f8f7f4;
 }
 
+.submenu li:first-child {
+  padding-top: 10px;
+}
+
+.submenu a:first-child li {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.submenu a:last-child li {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .submenu a {
   margin-bottom: -1px;
   padding: 0;
@@ -167,7 +191,7 @@ body {
 .submenu a:first-child::after {
   position: absolute;
   z-index: 100;
-  top: 40.5px;
+  top: 38.5px;
   left: 7px;
   content: "";
   height: 1px;
@@ -181,6 +205,7 @@ body {
 
 .submenu li:active {
   background-color: #f6b5a5;
+  border-color: transparent;
 }
 
 ul .active {
@@ -215,7 +240,7 @@ ul .active {
   border-radius: 40px;
   border: #a5bcb0 2px solid;
   box-shadow: none;
-
+  transition: background-color 0.3s ease-out 0s, border 0.4s ease 0s;
 }
 
 .user-block  li {
@@ -233,6 +258,11 @@ ul .active {
   color: #000000;
   background: #ffffff;
   border: solid 2px #ffffff;
+  box
+}
+
+.user-block a{
+  text-decoration: none;
 }
 
 .find {
