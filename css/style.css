@@ -789,9 +789,9 @@ input[type="radio"]:checked + label {
   padding: 14px 35px 13px 32px;
 }
 
-#YMapsID {
+map {
   height:429px;
-  width: auto;
+  width: 100%;
 }
 
 /*---------------------------------FOOTER------------------------------------*/
