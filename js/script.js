@@ -29,14 +29,24 @@ var link = document.querySelector(".open-modal");
 var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-content-close");
 var name = popup.querySelector("[name=fullname]");
+var email = popup.querySelector("name=email");
+var text = popup.querySelector("name=feedback");
+var form = popup.querySelector("form");
 
 link.addEventListener("click", function(event) {
-  event.PreventDefault();
+  event.preventDefault();
   popup.classList.add("modal-content-show");
   name.focus();
 });
 
 close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("modal-content-show");
+});
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  if(!name.value || !email.value || !text.value) {
     event.preventDefault();
-    popup.classList.remove("modal-content-show");
-  });
+  }
+});
