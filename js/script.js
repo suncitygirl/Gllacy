@@ -32,16 +32,19 @@ var name = popup.querySelector("[name=fullname]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=feedback]");
 var form = popup.querySelector("form");
+var overlay = document.querySelector("body");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");
+  overlay.classList.add("overlay")
   name.focus();
 });
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("modal-content-show");
+  overlay.classList.remove("overlay")
 });
 
 form.addEventListener("submit", function(event) {
