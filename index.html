@@ -77,11 +77,11 @@
           <li>
             <a href="gllacy-catalog.html">Каталог</a>
             <ul class="submenu">
-              <a href="#"><li>Новинки</li></a>
-              <a href="#"><li>Сливочное</li></a>
-              <a href="#"><li>Щербеты</li></a>
-              <a href="#"><li>Фруктовый лед</li></a>
-              <a href="#"><li>Мелорин</li></a>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
@@ -96,6 +96,11 @@
                 <use xlink:href="#find-icon"></use>
               </svg>
             </a>
+            <div class="find-form-wrapper">
+              <form action="#" method="post">
+                <input type="text" name="find" placeholder="Что ищем?">
+              </form>
+            </div>
           </li>
           <li>
             <a class="login" href="#">
@@ -104,6 +109,15 @@
               </svg>
               Вход
             </a>
+            <div class="login-form-wrapper">
+              <form action="#" method="post">
+                <input type="email" name="login" placeholder="Электронная почта">
+                <input type="password" name="password" placeholder="Пароль">
+                <input type="submit" class="btn enter-button">
+              </form>
+              <a class="password-reminder" href="#">Забыли пароль?</a>
+              <a class="sign-up" href="#">Новая регистрация</a>
+            </div>
           </li>
           <li>
             <a class="cart" href="#">
@@ -291,14 +305,16 @@
     </div>
   </footer>
   <div class="modal-content">
-      <p>Мы обязательно вам ответим!</p>
-      <button class="modal-content-close" type="button"></button>
-      <form action="#" method="post">
-        <input type="text" name="fullname" placeholder="Как ваз зовут?" required>
-        <input type="email" name="email" placeholder="Ваша почта для ответа" required>
+    <p>Мы обязательно вам ответим!</p>
+    <button class="modal-content-close" type="button"></button>
+    <form action="#" method="post">
+      <input type="text" name="fullname" placeholder="Как вас зовут?" required>
+      <input type="email" name="email" placeholder="Ваша почта для ответа" required>
+      <div class="textarea-wrapper">
         <textarea rows="6" name="feedback" placeholder="Напишите что-нибудь..." required></textarea>
-        <input type="submit" class="btn" value="Отправить">
-      </form>
+      </div>
+      <input type="submit" class="btn" value="Отправить">
+    </form>
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/script.js"></script>
