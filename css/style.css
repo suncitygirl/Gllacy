@@ -160,9 +160,6 @@ body {
   margin: 0;
   padding: 7px 21px;
   width: 102px;
-  color: #343434;
-  font-size: 14px;
-  font-weight: 400;
   background-color: #f8f7f4;
 }
 
@@ -170,19 +167,23 @@ body {
   padding-top: 10px;
 }
 
-.submenu a:first-child li {
+.submenu li:first-child {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-.submenu a:last-child li {
+.submenu li:last-child {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .submenu a {
   margin-bottom: -1px;
   padding: 0;
   text-decoration: none;
+  color: #343434;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .submenu a:first-child li{
@@ -190,10 +191,10 @@ body {
   font-weight: 700;
 }
 
-.submenu a:first-child::after {
+.submenu li:first-child::after {
   position: absolute;
   z-index: 100;
-  top: 38.5px;
+  top: 42.5px;
   left: 7px;
   content: "";
   height: 1px;
@@ -229,7 +230,7 @@ ul .active {
   list-style: none;
 }
 
-.user-block a {
+.user-block .user-block-item{
   position: relative;
   display: inline-block;
   padding-bottom: 9px;
@@ -256,15 +257,113 @@ ul .active {
   margin-right: 0;
 }
 
-.user-block a:hover {
+.user-block .user-block-item:hover {
   color: #000000;
   background: #ffffff;
   border: solid 2px #ffffff;
-  box
 }
 
-.user-block a{
+.user-block .user-block-item{
   text-decoration: none;
+}
+
+.find-form-wrapper {
+  display: none;
+  position: absolute;
+  bottom: -72px;
+  left: -235px;
+  z-index: 1000;
+  width: 242px;
+  padding: 15px;
+  background-color: #f8f7f4;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 10px;
+}
+
+li:first-child:hover .find-form-wrapper {
+  display: block;
+}
+
+.find-form-wrapper form{
+  margin: 0;
+}
+
+.find-form-wrapper input[type="text"] {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: solid #d3d3d2 1px;
+}
+
+.user-block a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}
+
+.login-form-wrapper {
+  display: none;
+  position: absolute;
+  width: 242px;
+  bottom: -180px;
+  left: -130px;
+  z-index: 1000;
+  padding: 20px 15px 57px 15px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
+
+.login-form-wrapper form {
+  margin: 0;
+  padding: 0;
+}
+
+li:nth-child(2):hover .login-form-wrapper {
+  display: block;
+}
+
+.login-form-wrapper input[type="email"],
+.login-form-wrapper input[type="password"] {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: solid #d3d3d2 1px;
+}
+
+.link-wrapper {
+  position: absolute;
+  bottom: 16px;
+  right: 18px;
+  width: 120px;
+}
+
+.link-wrapper a {
+  color: #333;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.enter-btn {
+  position: absolute;
+  padding: 9px 29px;
+  border: none;
+}
+
+.login-form-wrapper {
+  display: none;
 }
 
 .find {
@@ -348,6 +447,7 @@ svg path {
   color: #ffffff;
   background-color: #849d8f;
 }
+
 /*--------------------------SLIDER PART------------------------------------*/
 
 .slider {
@@ -948,12 +1048,12 @@ svg .fill-color2 {
 .modal-content {
   display: none;
   position: fixed;
-  top:340px;
+  top: 200px;
   left: 50%;
   z-index: 1000;
   width: 430px;
   margin-left: -238px;
-  padding: 16px 24px 80px 24px;
+  padding: 16px 45px 95px 24px;
   background-color: #f8f7f4;
   border-radius: 10px;
 }
@@ -962,8 +1062,7 @@ svg .fill-color2 {
   display: block;
 }
 
-.modal-content p
-{
+.modal-content p {
   margin: 0;
   margin-bottom: 21px;
   color: #343434;
@@ -972,7 +1071,7 @@ svg .fill-color2 {
   line-height: 22px;
 }
 
-.exit {
+.modal-content-close {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -984,8 +1083,8 @@ svg .fill-color2 {
   cursor: pointer;
 }
 
-.exit::before,
-.exit::after {
+.modal-content-close::before,
+.modal-content-close::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -996,24 +1095,36 @@ svg .fill-color2 {
   background-color: #000000;
 }
 
-.exit::before {
+.modal-content-close::before {
   transform: rotate(45deg);
 }
 
-.exit::after {
+.modal-content-close::after {
   transform: rotate(-45deg);
 }
 
-input[type="text"],
-input[type="email"] {
+.modal-content input[type="text"],
+.modal-content input[type="email"] {
   width: 265px;
   margin-bottom: 21px;
   padding: 11px;
+  border-radius: 10px;
+  border: solid #d3d3d2 1px;
+}
+
+.textarea-wrapper {
+  width: 100%;
+  height: auto;
 }
 
 textarea {
   width: 100%;
+  min-width: 269px;
   padding: 11px;
+  height: auto;
+  max-width: 430px;
+  border-radius: 10px;
+  border: solid #d3d3d2 1px;
 }
 
 .modal-content .btn {
